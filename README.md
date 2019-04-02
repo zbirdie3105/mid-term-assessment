@@ -13,6 +13,8 @@ Due to Frank's bad rating as a passenger in an Uber, not many cars will pick him
 
 You fit a linear regression to predict SAT score with many predictors, one of which is whether or not the student was homeschooled. Beta_homeschool = -40. How do you interpret the coefficient?
 
+*Being homeschooled reduces SAT by 40 points.*
+
 ### Q-03
 
 *10 PTS*
@@ -43,11 +45,15 @@ test set recall:     52%
 
 What's going on? What tactic(s) do we have to modify our Decision Tree to fix the issue?
 
+*Tree is overfitting, start pruning.*
+
 ### Q-06
 
 *5 PTS*
 
 You have a linear regression model that is overfitting on training data. What regularization techniques do you have to help with this issue? How do these techniques differ?
+
+*L1/L2*
 
 ### Q-07
 
@@ -68,6 +74,8 @@ column_averages('data/example.csv')
 
 I have two 6-sided dice. One is a standard die with the numbers 1-6. The other has three 3's and three 6's. You grab one at random and roll a six. What is the probability that you chose the fair die?
 
+*1/4*
+
 ### Q-09
 
 *5 PTS*
@@ -84,6 +92,8 @@ You are given the following data of student grades in a 5-by-5 matrix.
 
 Make a guess of the rank of the matrix. Explain your guess.
 
+*3*
+
 ### Q-10
 
 *5 PTS*
@@ -93,6 +103,8 @@ You have a model that predicts the price of the house given the number of square
 What is going on in this graph? What would be an optimal choice for the degree of the polynomial?
 
 ![House](housing.png)
+
+*4 to 6 is good*
 
 ### Q-11
 
@@ -108,11 +120,15 @@ You have three models which classify emails as spam or not spam. You have tested
 
 Create a model which would have higher accuracy than any of the three models.
 
+*Predict all as not spam.*
+
 ### Q-12
 
 *5 PTS*
 
 Logistic Regression internally creates a linear equation. How does the model use this linear equation to produce probabilities?
+
+*Use the sigmoid*
 
 ### Q-13
 
@@ -120,11 +136,15 @@ Logistic Regression internally creates a linear equation. How does the model use
 
 What is grid search doing when it's running?
 
+*Creating different models with various hyperparameters, looking for the best model*
+
 ### Q-14
 
 *5 PTS*
 
 If your linear regression model had a negative R-squared, what would be the simplest thing you could do to improve the model?
+
+*Predict the mean*
 
 ### Q-15
 
@@ -132,11 +152,15 @@ If your linear regression model had a negative R-squared, what would be the simp
 
 Due to overfitting on your linear regression model, you decide to use L2 regularization. How do you know when lambda is tuned to the correct value for optimal model performance?
 
+*Look at your test data, when metrics are best*
+
 ### Q-16
 
 *5 PTS*
 
 When scaling your data, why do you scale the test data set from the values in the training data set?
+
+*Test data represents future data.*
 
 ### Q-17
 
@@ -144,17 +168,23 @@ When scaling your data, why do you scale the test data set from the values in th
 
 When computing probabilities, the CDF of a binomial distribution uses sigma notation while the CDF of a gamma distribution uses integral notation. Why is this?
 
+*Binomial is discrete, Gamma is continuous.*
+
 ### Q-18
 
 *5 PTS*
 
 Suppose you compare a five-predictor model with a higher R-squared to a one-predictor model. Is the five-predictor model better? Why?
 
+*Look at adjusted R-squared to verify*
+
 ### Q-19
 
 *5 PTS*
 
 Why should you use relatively low dimensional vectors when using a KNN model?
+
+*Curse of dimensionality*
 
 ### Q-20
 
